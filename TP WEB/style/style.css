@@ -69,6 +69,7 @@ header, footer {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+
 }
   
 .footer-logo img, .header-logo img {
@@ -97,3 +98,4 @@ header, footer {
     text-align: center;
     font-size: 14px;
 }
+

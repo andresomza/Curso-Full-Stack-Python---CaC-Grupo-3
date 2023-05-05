@@ -9,9 +9,7 @@ h2 {
     text-align: center;
 }
   
-body {
-    background-color: rgba(0, 100, 0, 0.082);  
-}
+
   
 header, footer {
     border-top: 2px solid green;

@@ -1,3 +1,8 @@
+* {
+
+    font-family: 'Noto Sans', sans-serif;
+}
+
 /*CONTENEDOR DEL LOGO*/
 .container0{
     display: grid;
@@ -36,7 +41,7 @@
     border-bottom: 4px solid gray;
 }
 
-.toptitle{
+.title{
     background-color: white;
     grid-column: 1/3;
     grid-row: 1/4;
@@ -135,6 +140,8 @@
     grid-template-rows: 10% 80% 10%;
 }
 
+
+
 .midtitle{
     background-color: white;
     grid-column: 1/4;
@@ -152,7 +159,7 @@
     
     grid-column: 2/3;
     grid-row: 2/3;
-
+    border: 1px outset gray;
     margin: auto;
 }
 
@@ -160,7 +167,7 @@
     
     grid-column: 3/4;
     grid-row: 2/3;
-
+    border: 1px outset gray;
     margin: auto;
 }
 
@@ -248,77 +255,209 @@
  /* ..................................................................*/
 
 
+
+
 /* CONTENEDOR DE ABAJO*/
 .container3{
     width: 1200px;
     height: 600px;
     margin: auto;
-    margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: 10% 40% 40% 10%;
 }
 
 .equipotitle{
-    background-color: cyan;
     grid-column: 1/5;
     grid-row: 1/2;
+    background-color: white;
+    color: gray;
+}
+
+
+
+.imagen_equipo{
+    display: flex;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+}
+
+.btn_equipo{
+    background-color: black;
+    border: 3px solid;
+    border-radius: 8px;
+    width: 50%;
+
+
+}
+
+
+.btn_equipo a{
+    color: white;
+    text-decoration: none;
 }
 
 .equipo1{
     background-color: coral;
     grid-column: 1/2;
     grid-row: 2/3;
+    text-align: center;
 }
 
 .equipo2{
     background-color: gold;
     grid-column: 2/3;
     grid-row: 2/3;
+    text-align: center;
 }
 
 .equipo3{
     background-color: firebrick;
     grid-column: 3/4;
     grid-row: 2/3;
+    text-align: center;
 }
 .equipo4{
     background-color: cornflowerblue;
     grid-column: 4/5;
     grid-row: 2/4;
+    text-align: center;
 }
 
 .equipo5{
     background-color: indianred;
     grid-column: 1/2;
     grid-row: 3/4;
+    text-align: center;
 }
 .equipo6{
     background-color: lightgreen;
     grid-column: 2/3;
     grid-row: 3/4;
+    text-align: center;
 }
 .equipo7{
     background-color: wheat;
     grid-column: 3/4;
     grid-row: 3/4;
+    text-align: center;
 }
 .equipo8{
     background-color: darkkhaki;
     grid-column: 4/5;
     grid-row: 3/4;
-}
-
-
-.equipo9{
-    background-color: darkgray;
-    grid-column: 1/5;
-    grid-row: 4/5;
     text-align: center;
 }
 
 
-    
+.equipo9{
+    background-color: white;
+    grid-column: 1/5;
+    grid-row: 4/5;
+    text-align: center;
+
+}
 
 
 
+
+.btn_vermasequipos{
+
+    border: 3px solid #94377e;
+    border-radius: 8px;
+    width: 50%;
+    height: 80%;
+}
+
+.btn_vermasequipos a{
+    text-decoration: none;
+    color: #9b3d7f;
+    font-size: 30px;
+    display: block;
+}
+
+.btn_vermasequipos:hover{ 
+    background-color: #9b3d7f;
+    transition: 0.3s;
+}
+
+.btn_vermasequipos a:hover{
+    color: white;
+    transition: 0.3s;
+}
+
+
+
+
+/*HEADER Y FOOTER*/
+header, footer {
+    border-top: 2px solid green;
+    border-bottom: 2px solid green;
+    background-color: rgba(0, 100, 0, 0.192);
+    padding: 3px;
+    text-align: right;
+}
+
+.header-links ul, .footer-links ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+  
+.header-links li, .footer-links li {
+    margin-right: 20px;
+}
+  
+.header-links a, .footer-links a {
+    color: #000;
+    text-decoration: none;
+}
+  
+.redes img {
+    width: 30px;
+    height: 30px;
+}
+  
+.redes li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer-container, .header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+  
+.footer-logo img, .header-logo img {
+    max-width: 80px;
+}
+  
+.footer-social ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+  
+.footer-social li {
+    margin-right: 20px;
+}
+
+.footer-social i {
+    font-size: 20px;
+}
+
+.footer-bottom {
+
+    background-color: #222;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+}

@@ -44,7 +44,7 @@
 .title{
     background-color: white;
     grid-column: 1/3;
-    grid-row: 1/4;
+    grid-row: 1/2;
     color: gray;
 }
 
@@ -54,16 +54,45 @@
     display: grid;
     grid-column: 1/2;
     grid-row: 2/3;
+    height: 100%;
+    width: 100%;
     grid-template-columns: 100%;
     grid-template-rows: 70% 30%;
+    background-image: url("https://resources.esportsinsider.com/esportsinsider/2023/05/Screenshot-2023-05-05-at-10.27.32-min-large.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 10px;  
+    
+    transition: .4s linear;
+
+   
+    
+}
+
+
+.box_noticia:hover{
+    width: 101%;
+    height: 101%;
+    transition: .4s linear;
+    
+}
+
+.noticia1{
+    color: white;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: black;
+    opacity: .8;     
+}
+
+.noticia1 h2{
+    margin-left: 10px;
 }
 
 .img_noticia{
     display: flex;
     justify-content: center;
     align-items: center;
-
-
 }
 
 
@@ -91,39 +120,126 @@
 /*Seccion 2 de noticias*/
 .top2{
     display: grid;   
+    width: 100%;
+    height: 100%;
     grid-column: 2/3;
     grid-row: 2/3;
     grid-template-columns: 100%;
     grid-template-rows: 70% 30%;
+    background-image: url("https://resources.esportsinsider.com/esportsinsider/2023/05/Screenshot-2023-05-05-at-10.27.32-min-large.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 10px;   
+    transition: .4s linear;
+    margin-left: 10px;
 
+}
+
+.noticia2{
+    color: white;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: black;
+    opacity: .8;  
+}
+
+.noticia2 h2{
+    margin-left: 10px;
+    font-size: 100%;
+    
 }
 
 
 /*Seccion 3 de noticias*/
 .top3{
     display: grid;
+    width: 100%;
+    height: 100%;
     grid-column: 1/3;
     grid-row: 3/4;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 70% 30%;
-    margin: auto;
+    margin-top: 20px;
+
+}
+
+
+
+
+
+
+.noticia3{
+    display: flex;
+    align-items: flex-end;
+    width: 98%;
+    height: 98%;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background-image: url("https://resources.esportsinsider.com/esportsinsider/2023/05/Screenshot-2023-05-05-at-10.27.32-min-large.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
     
 }
 
-.img_noticia_abajo{
+.noticia4{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+    width: 98%;
+    height: 98%;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    background-image: url("https://resources.esportsinsider.com/esportsinsider/2023/05/Screenshot-2023-05-05-at-10.27.32-min-large.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
 }
 
-.descripcion_noticia_abajo{
+.noticia5{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background-color: black;
-    width: 90%;
+    align-items: flex-end;
+    width: 98%;
+    height: 98%;
+    grid-column: 3/4;
+    grid-row: 1/3;
+    background-image: url("https://resources.esportsinsider.com/esportsinsider/2023/05/Screenshot-2023-05-05-at-10.27.32-min-large.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
 }
+
+.noticia6{
+    display: flex;
+    align-items: flex-end;
+    width: 98%;
+    height: 98%;
+    grid-column: 4/5;
+    grid-row: 1/3;
+    background-image: url("https://resources.esportsinsider.com/esportsinsider/2023/05/Screenshot-2023-05-05-at-10.27.32-min-large.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+
+
+.combonoticias h2{
+    height: 30%;
+    color: white;
+    opacity: .8;  
+    background-color: black;
+    font-size: 100%;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.combonoticias:hover{
+    width: 99%;
+    height: 99%;
+    transition: .4s linear;
+}
+
+
+
 
 
 

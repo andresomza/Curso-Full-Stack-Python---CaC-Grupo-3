@@ -12,38 +12,51 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/inicio.css">
     <title>Contacto</title>
 </head>
 
 <body>
+    <!-- BARRA DE NAVEGACION -->
     <header>
-        <div class="header-container">
-            <div class="header-logo">
-                <img src="media/logo.png" alt="Logo del club">
-            </div>
-            <div>
-                <h1>Nombre del club - Contacto</h1>
-            </div>
-            <div class="header-links">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="equipos.html">Equipos</a></li>
-                    <li><a href="noticias.html">Noticias</a></li>
-                    <li><a href="eventos.html">Eventos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-        </div>
-    </header>
+       <div class="header-container">
+           <div class="header-logo">
+               <img src="../media/logo.png" alt="Logo del club">
+           </div>
+           <div>
+               <h1>Nombre del club - Inicio</h1>
+           </div>
+           <div class="header-links">
+               <ul>
+                   <li><a href="index.html">Inicio</a></li>
+                   <li><a href="equipos.html">Equipos</a></li>
+                   <li><a href="noticias.html">Noticias</a></li>
+                   <li><a href="eventos.html">Eventos</a></li>
+                   <li><a href="contacto.html">Contacto</a></li>
+                   <li><a href="prueba_repo-html">prueba Repo</a></li>
+               </ul>
+           </div>
+       </div>
+     </header>
 
     <main >
+
         <div class="container-fluid">
+            
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <h1 class="titulo">CONTACTENOS</h1>
+                </div>
+                <div class="col-2"></div>
+            </div>
+
             <div class="row">
                 <div class="col-2">
 
                 </div>
                 <div class="col-8">
-                    <form>
+                    <form onsubmit="return validarForm()">
                         <div class="form-group">
                           <label for="nombre"> Nombre</label>
                           <input type="text" class="form-control" id="nombre"  placeholder="Ingrese su nombre">
@@ -57,6 +70,11 @@
                         <div class="form-group">
                             <label for="correo"> Correo electronico</label>
                             <input type="email" class="form-control" id="correo"  placeholder="Ingrese su email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefono"> Numero de telefono</label>
+                            <input type="text" class="form-control" id="telefono"  placeholder="Ingrese su numero de telefono">
                         </div>
                     
                         <div class="form-group">
@@ -79,7 +97,7 @@
                             <textarea class="form-control" id="descripcion" rows="3"></textarea>
                         </div>
                         
-
+                        
                         <button type="submit" class="btn btn-success mt-2" id="btn_enviar">Enviar</button>
 
                     </form>
@@ -88,40 +106,47 @@
 
                 </div>
             </div>
+
+
         </div> 
 
     </main>
 
 
+<!-- FOOTER -->
     <footer>
         <div class="footer-container">
             <div class="footer-logo">
-              <img src="media/logo.png" alt="Logo del club">
+                <img src="../media/logo.png" alt="Logo del club">
             </div>
-            <div class="footer-links">
-              <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="equipos.html">Equipos</a></li>
-                <li><a href="noticias.html">Noticias</a></li>
-                <li><a href="eventos.html">Eventos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-              </ul>
-            </div>
-            <div class="redes">
-                <ul>
-                    <li><p>Nuestras redes</p></li>
-                    <li><img src="media/fb.png" alt="Facebook logo"></li>
-                    <li><img src="media/ig.png" alt="Instagram logo"></li>
-                    <li><img src="media/tw.png" alt="Twitter logo"></li>
-                    <li><img src="media/wpp.png" alt="Whatsapp logo"></li>
-                    <li><img src="media/yt.png" alt="Youtube logo"></li>
-                </ul>
-            </div>
-          </div>
-          <div class="footer-bottom">
-            <p>Derechos de autor © 2023 Nombre del club. Todos los derechos reservados.</p>
-          </div>
-    </footer>
-</body>
+        <div class="footer-links">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="equipos.html">Equipos</a></li>
+            <li><a href="noticias.html">Noticias</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="redes">
+            <ul>
+                <li><p>Nuestras redes</p></li>
+                <li><img src="../media/fb.png" alt="Facebook logo"></li>
+                <li><img src="../media/ig.png" alt="Instagram logo"></li>
+                <li><img src="../media/tw.png" alt="Twitter logo"></li>
+                <li><img src="../media/wpp.png" alt="Whatsapp logo"></li>
+                <li><img src="../media/yt.png" alt="Youtube logo"></li>
+            </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Derechos de autor © 2023 Nombre del club. Todos los derechos reservados "texto modificado para pueba de BRANCH Test".</p>
+      </div>
+</footer>
 
+
+<script src="../js/contacto.js"></script>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+</body>
 </html>

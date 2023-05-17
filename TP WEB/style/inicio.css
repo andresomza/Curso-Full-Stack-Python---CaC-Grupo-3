@@ -395,9 +395,11 @@
 
 .imagen_equipo{
     display: flex;
+    max-width: 110px;
     width: 50%;
     height: 50%;
     margin: auto;
+    margin-top: 10px;
 }
 
 .btn_equipo{

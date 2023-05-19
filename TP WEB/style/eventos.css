@@ -71,7 +71,7 @@
 .box-title1{
     grid-column: 1/4;
     grid-row: 1;
-    background-color: rgb(0, 251, 255);
+    background-color:rgb(41, 171, 226);
     border-radius: 2px solid black; 
     
 }
@@ -89,16 +89,19 @@
     font-size: large;
     color: black;
     font-style: italic;
+    padding-left: 5%;
+    padding-top: 0%;
 }
 #desciption ~ p{
     font-size: medium;
     color: blue;
     font-style: inherit;
+    padding-left: 5%;
 }
 .box-title2{
     grid-column: 1/4;
     grid-row: 3/4;
-    background-color: rgb(0, 251, 255);
+    background-color:rgb(41, 171, 226);
     border-radius: 1px solid black;    
 }
 .box-video2{
@@ -115,7 +118,7 @@
     
     grid-column: 1/4;
     grid-row: 5/6;
-    background-color:  rgb(0, 251, 255);
+    background-color:  rgb(41, 171, 226);
     border-radius: 1px solid black;    
 }
 .box-video3{

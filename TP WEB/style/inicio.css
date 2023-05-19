@@ -356,20 +356,43 @@
     height: 100%;
     backface-visibility: hidden;
   }
+  .flip-card-back a {
+    color: black;
+    text-decoration: none;
+
+  }
   
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
     background-color: black;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
 
   }
+  .flip-card-front img{   
+    max-height: 98%;
+    width: auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    opacity: 0.8;   
+
+
+  }
+
   
   /* Style the back side */
   .flip-card-back {
-    background-color: rgb(251, 255, 30);
-    color: black;
-    transform: rotateY(180deg);
-}
- /* ..................................................................*/
+      background-color: rgb(41, 171, 226);
+      color: black;
+      transform: rotateY(180deg);    
+      
+    }
+    .flip-card-back p{
+        text-align: left;
+        padding: 5%;
+    }
+    /* ..................................................................*/
 
 
 

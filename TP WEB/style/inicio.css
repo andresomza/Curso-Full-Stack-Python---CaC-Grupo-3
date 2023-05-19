@@ -383,9 +383,10 @@
   
   /* Style the back side */
   .flip-card-back {
-      background-color: rgb(41, 171, 226);
+      background-color: rgb(214, 200, 197);
       color: black;
       transform: rotateY(180deg);    
+      opacity: 75%;
       
     }
     .flip-card-back p{
@@ -420,9 +421,9 @@
 .imagen_equipo{
     display: flex;
     max-width: 110px;
-    width: 50%;
-    height: 50%;
-    margin: auto;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
     margin-top: 10px;
 }
 
@@ -436,58 +437,72 @@
 }
 
 
+
+.box_equipo{
+    width: 95%;
+    height: 95%;
+    border-radius: 25px;
+}
+
+
+.card{
+    opacity: 80%;
+}
+
 .btn_equipo a{
     color: white;
     text-decoration: none;
 }
 
 .equipo1{
-    background-color: #e19e2e;
+    background-color:rgb(172, 199, 240);
     grid-column: 1/2;
     grid-row: 2/3;
     text-align: center;
 }
 
 .equipo2{
-    background-color: #d5b471;
+    background-color: #d07adb;
     grid-column: 2/3;
     grid-row: 2/3;
     text-align: center;
 }
 
 .equipo3{
-    background-color: #0054ad;
+    background-color: #dae080;
     grid-column: 3/4;
     grid-row: 2/3;
     text-align: center;
 }
 .equipo4{
-    background-color: #cd3333;
+    background-color: #ebe719;
     grid-column: 4/5;
-    grid-row: 2/4;
+    grid-row: 2/3;
     text-align: center;
+    
 }
 
 .equipo5{
-    background-color: #ed3537;
+    background-color: #41add8;
     grid-column: 1/2;
     grid-row: 3/4;
     text-align: center;
 }
 .equipo6{
-    background-color: #003293;
+    background-color: #da8acf;
     grid-column: 2/3;
     grid-row: 3/4;
     text-align: center;
 }
 .equipo7{
-    background-color: #2663b9;
+    background-color: #7a7f88;
     grid-column: 3/4;
     grid-row: 3/4;
     text-align: center;
+    font-size: 97%;
 }
 .equipo8{
-    background-color: #e97a0c;
+    background-color: #be6059;
     grid-column: 4/5;
     grid-row: 3/4;
     text-align: center;

@@ -22,14 +22,11 @@
             <div class="header-logo">
                 <img src="../media/logo.png" alt="Logo del club">
             </div>
-            <div>
-                <h1>Esports Argentina - Equipos</h1>
-            </div>
+
             <div class="header-links">
                 <ul>
-                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="index.html">Inicio</a></li>
                     <li><a href="equipos.html">Equipos</a></li>
-                    <li><a href="noticias.html">Noticias</a></li>
                     <li><a href="eventos.html">Eventos</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
@@ -41,7 +38,7 @@
         <div class="flip-card">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                    <img src="../media/csgo.png" alt="Avatar" style="width:auto;height:auto">
+                    <img src="../media/csgo.png" alt="Avatar" style="width:250px;height:250px">
                 </div>
                 <div class="flip-card-back" id="api">
                     <h1>Top Equipos de CS:GO</h1>
@@ -69,7 +66,7 @@
         <div class="flip-card">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                    <img src="../media/rocket.png" alt="Avatar" style="width:300px;height:300px">
+                    <img src="../media/rocket.png" alt="Avatar" style="width:250px;height:250px">
                 </div>
                 <div class="flip-card-back" id="api">
                     <h1>Top Equipos de Rocket League</h1>
@@ -83,7 +80,7 @@
         <div class="flip-card">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                    <img src="../media/rainbow.png" alt="Avatar" style="width:300px;height:300px">
+                    <img src="../media/rainbow.png" alt="Avatar" style="width:250px;height:250px">
                 </div>
                 <div class="flip-card-back" id="api">
                     <h1>Top Equipos de Rainbow Six</h1>
@@ -111,7 +108,7 @@
         <div class="juego container-flex">
             <div class="boxcsgo" v-for="dato in datos_csgo">
                 <div class="card">
-                    <img class="imagen_equipo" src="{{dato.link_imagen}}" alt="Avatar">
+                    <img class="imagen_equipo" :src="dato.link_imagen" alt="Avatar">
                     <div class="desc_equipo">
                         <h1><b>{{dato.nombre}}</b></h1>
                         <button type="button" class="btn_equipo"> <a :href="dato.link_equipos" target="_blank">Mas información</a></button>
@@ -126,7 +123,7 @@
         <div class="juego container-flex">
             <div class="boxcsgo" v-for="dato in datos_lol">
                 <div class="card">
-                    <img class="imagen_equipo" src="{{dato.link_imagen}}" alt="Avatar">
+                    <img class="imagen_equipo" :src="dato.link_imagen" alt="Avatar">
                     <div class="desc_equipo">
                         <h1><b>{{dato.nombre}}</b></h1>
                         <button type="button" class="btn_equipo"> <a :href="dato.link_equipos" target="_blank">Mas información</a></button>
@@ -141,7 +138,7 @@
         <div class="juego container-flex">
             <div class="boxcsgo" v-for="dato in datos_rocket">
                 <div class="card">
-                    <img class="imagen_equipo" src="{{dato.link_imagen}}" alt="Avatar">
+                    <img class="imagen_equipo" :src="dato.link_imagen" alt="Avatar">
                     <div class="desc_equipo">
                         <h1><b>{{dato.nombre}}</b></h1>
                         <button type="button" class="btn_equipo"> <a :href="dato.link_equipos" target="_blank">Mas información</a></button>
@@ -156,7 +153,7 @@
         <div class="juego container-flex">
             <div class="boxcsgo" v-for="dato in datos_rainbow">
                 <div class="card">
-                    <img class="imagen_equipo" src="{{dato.link_imagen}}" alt="Avatar">
+                    <img class="imagen_equipo" :src="dato.link_imagen" alt="Avatar">
                     <div class="desc_equipo">
                         <h1><b>{{dato.nombre}}</b></h1>
                         <button type="button" class="btn_equipo"> <a :href="dato.link_equipos" target="_blank">Mas información</a></button>
